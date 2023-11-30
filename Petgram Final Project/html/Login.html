@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\Petgram Final Project\css\Login.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+             <span>
+                 PET
+                 <i class="fa fa-paw"></i>
+                 GRAM
+             </span>
+        </div>
+        <ul class="options">
+             <li><a href="../html/home.html">Home</a></li>
+             <li><a href="../html/agendar.html">Agendar</a></li>
+             <li><a href="https://chat.whatsapp.com/Irbqb8w1bMX2Ldn0IZLP5m">Contato</a></li>
+        </ul>
+        <div class="user">
+            <a href="../html/login.html">Login</a>
+             <p> | </p>
+             <a href="../html/cadastro.html">Cadastrar</a>
+        </div>
+        <div class="hamburguer" onclick="menuMobile()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+     </nav>
+  <div class="interface-login">
+    <br> <br>
+      <h1>Petgram</h1>
+      <h1>Login</h1>
+     <input type="email" placeholder="Usuário" required>
+    <br> <br>
+     <input type="password" placeholder="Senha" required>
+     <br> <br>
+     <div id="button"><button onclick="myfunction()">Enviar</button></div>
+  </div>
+
+  <script>function myfunction(){
+    alert("Envio feito com sucesso!")
+   }</script>
+</body>
+</html>

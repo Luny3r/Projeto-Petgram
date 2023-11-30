@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Indie+Flower&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href= "C:\xampp\htdocs\Petgram Final Project\css\Agendar.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+             <span>
+                 PET
+                 <i class="fa fa-paw"></i>
+                 GRAM
+             </span>
+        </div>
+        <ul class="options">
+             <li><a href="../html/home.html">Home</a></li>
+             <li><a href="https://chat.whatsapp.com/Irbqb8w1bMX2Ldn0IZLP5m">Contato</a></li>
+        </ul>
+        <div class="user">
+             <a href="../html/login.html">Login</a>
+             <p> | </p>
+             <a href="../html/cadastro.html">Cadastrar</a>
+        </div>
+        <div class="hamburguer" onclick="menuMobile()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+     </nav>
+            
+    <div class="form">
+        <h1>Agendamento</h1>
+        <br>
+        <label for="Nome">Nome:</label>
+        <input id="Nome" type="text" name="nome" placeholder="Digite o nome do seu pet" required>
+        <br><br> 
+        <label for="Raça">Raça:</label>
+     <input id="Raça" type="text" name="Raça" placeholder="Digite a raça do seu pet" required>
+        <br><br> 
+     <div>
+        <label for="Sexo">Sexo:</label>
+        <label>
+            <input type="radio" name="Sexo" value="Grande"> Macho
+        </label>
+
+        <label>
+            <input type="radio" name="Sexo" value="Fêmea"> Fêmea
+        </label>
+     </div>
+     <br>
+     <label for="Email">Email:</label>
+     <input id="Email" type="email" name="Email" placeholder="Digite o seu Email" required>
+     <br><br> 
+     <div>
+        <label for="Porte">Porte:</label>
+        <label>
+            <input type="radio" name="porte" value="Grande" > Grande
+        </label>
+
+        <label>
+            <input type="radio" name="porte" value="Médio"> Médio
+        </label>
+
+        <label>
+            <input type="radio" name="porte" value="Grande"> Pequeno
+        </label>
+     </div>
+     <br>
+     <div>
+        <label for="Data">Data:</label>
+        <input id="Data" type="date" name="Data " required>
+
+        <label for="Hora">Hora:</label>
+        <input id="Hora" type="time" name="Hora " required>
+     </div>
+     <br>
+     <div id="button"><button onclick="myfunction()">Enviar</button></div>
+
+     <script src="C:\xampp\htdocs\Petgram Final Project\js\Script.js"></script>
+     <script>function myfunction(){
+         alert("Envio feito com sucesso!")
+        }</script>
+
+
+    </div>
+</body>
+</html>

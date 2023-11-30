@@ -1,0 +1,115 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image:url('');}
+    nav {
+        position: fixed;
+        top:0;
+        width: 100%;
+        height: 60px;
+        z-index: 9;
+        display: flex;
+        align-items: center;
+         background-image: linear-gradient(to right,yellow, orange);
+        color: #2fa1ff;
+    }
+    
+    .logo{
+        font-size: 28px;
+        flex:1;
+        margin-left: 20px;
+    }
+    
+    .logo span i{
+        color:#2fa1ff;
+    }
+    
+    
+    .options{
+        display: flex;
+        gap:20px;
+        list-style: none;
+        flex:2;
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .options li{
+        cursor: pointer;
+    }
+    
+    .user{
+        flex:1;
+        display: flex;
+        list-style: none;
+        gap:4px;
+        display: flex;
+        margin-right: 40px;
+        justify-content: flex-end;
+    }
+    
+    .user span{
+        cursor: pointer;
+    }
+    
+    .user p{
+        color:#001eff;
+    }
+    
+    .hamburguer{
+        display: none;
+        flex-direction: column;
+        gap:6px;
+        width: 30px;
+        margin-right: 40px;
+        cursor: pointer;
+    }
+    
+    .hamburguer .line{
+        height: 1px;
+        width: 100%;
+        background-color: white;
+    }
+
+.form{
+   
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    background-color: rgb(74, 198, 236);
+    padding:60px;
+    border-radius:13px;
+    
+}
+
+input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 13px;
+    border-radius: 10px;
+}
+
+button{
+    background-color: rgb(242, 255, 66);
+    padding: 13px;
+    width: 100%;
+    border-radius: 9px;
+    color: white;
+    font-size: 13px;
+    border: none;
+    
+}
+
+button:hover{
+    background-color: rgb(133, 139, 70);
+    cursor: pointer;
+ 
+}
